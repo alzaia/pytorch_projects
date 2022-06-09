@@ -47,13 +47,16 @@ print("Numpy array:", np_arr)
 
 
 a = torch.rand(3, 4, 6)
-print(a)
+
 
 b = torch.ones(3, 4, 6)
-print(b)
 
-c = 4*a + 3*b
+def play_with_tensors(tensor_a, tensor_b):
+    return 4*tensor_a + 3*tensor_b
+
+c = play_with_tensors(a, b)
 print(c)
+
 
 
 
